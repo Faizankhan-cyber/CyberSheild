@@ -607,7 +607,7 @@ CyberShield therefore presents its output as a **risk assessment and safety reco
 
 # 👥 Team
 
-### Team CyberShield
+### Team Cloud Sentinals
 
 **Project:** CyberShield – AI Digital Fraud & Phishing Detection
 

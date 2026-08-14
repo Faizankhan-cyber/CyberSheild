@@ -1,306 +1,647 @@
-🛡️ CyberShield
-AI-Powered Digital Fraud & Phishing Detection
+# 🛡️ CyberShield
 
-Project URL: https://cybersheild01.netlify.app/
+### AI-Powered Digital Fraud & Phishing Detection Platform
 
-CyberShield helps users identify phishing, fraud, malicious links, scams, and social-engineering attacks before they become victims.
+> **CyberShield helps users detect phishing, fraud, malicious links, and digital scams by combining explainable security rules with AI-assisted analysis.**
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-00C853?style=for-the-badge)](https://cybersheild01.netlify.app/)
+[![Built With](https://img.shields.io/badge/Built%20With-AI%20%2B%20Cybersecurity-6C63FF?style=for-the-badge)](#)
+[![Hackathon](https://img.shields.io/badge/Hackathon-PH--03-FF6B35?style=for-the-badge)](#)
 
-🚨 Problem
+---
 
-The rapid growth of digital services has led to an increase in:
+## 🚨 Problem
 
-Phishing messages
-Fake websites
-Fraudulent SMS and emails
-Malicious links
-OTP scams
-Financial scams
-Impersonation attacks
-Social-engineering attacks
+Digital services have made everyday life easier, but they have also created new opportunities for cybercriminals.
 
-Many users cannot easily determine whether a message or link is legitimate.
+Users regularly encounter:
 
-CyberShield addresses this problem by providing an easy-to-use digital safety assistant that analyzes suspicious content and explains the potential risks in simple language.
+* Phishing emails
+* Fake SMS messages
+* Malicious URLs
+* Bank impersonation
+* KYC scams
+* UPI and payment scams
+* Fake job offers
+* Prize and reward scams
+* Social engineering attacks
+* Suspicious QR codes
+* Fraudulent messages and websites
 
-💡 Solution
+The biggest problem is that many users cannot easily understand **why** something is suspicious.
 
-CyberShield is an AI-assisted digital fraud and phishing detection platform.
+A simple warning such as:
 
-Users can submit:
+> "This link may be dangerous."
 
-📱 SMS/messages
-📧 Emails
-🔗 URLs
-💬 Suspicious online content
+doesn't tell the user what they should look for or what they should do next.
 
-CyberShield analyzes the content for common threat indicators and generates:
+---
 
-🎯 Risk score
-🚨 Threat classification
-🔍 Detected threat indicators
-🤖 AI-style explanation
-🛡️ Recommended safe actions
-✨ Key Features
-🔍 AI Threat Scanner
+# 💡 Our Solution
 
-Analyze suspicious messages, emails, and URLs.
+**CyberShield** is an AI-assisted digital safety platform designed to help users identify potential phishing and digital fraud.
 
-The scanner looks for indicators such as:
+Instead of only producing a binary:
 
-Suspicious URLs
-Urgency and pressure tactics
-OTP requests
-Password requests
-Financial information requests
-Account suspension threats
-Impersonation
-Prize scams
-Social engineering
-Credential harvesting
-🎯 Risk Scoring
+> Safe / Unsafe
 
-Every scan receives a risk score from 0–100.
+CyberShield provides an **explainable risk assessment**.
 
-Score	Classification
-0–20	🟢 SAFE
-21–40	🔵 LOW RISK
-41–70	🟡 MEDIUM RISK
-71–90	🟠 HIGH RISK
-91–100	🔴 CRITICAL THREAT
-🤖 Explainable Threat Detection
+The platform analyzes available signals, calculates a risk score, identifies potential scam categories, explains the warning signs in simple language, and provides recommended safe actions.
 
-CyberShield doesn't simply say "this is phishing."
+### Core flow
 
-It explains why the content was flagged.
+```text
+          User Input
+              │
+      ┌───────┼────────┐
+      ↓       ↓        ↓
+    Email   Message    URL
+      │       │        │
+      └───────┼────────┘
+              ↓
+      Security Analysis
+              ↓
+       Detection Engine
+              ↓
+       Risk Score 0–100
+              ↓
+       Threat Category
+              ↓
+       Explainable Result
+              ↓
+        Safe Action Guide
+```
+
+---
+
+# ✨ Key Features
+
+## 🔗 1. URL Threat Analysis
+
+CyberShield analyzes suspicious URLs for potential risk indicators such as:
+
+* Suspicious domain patterns
+* Unusual URL structures
+* Suspicious keywords
+* Potential impersonation indicators
+* URL obfuscation
+* Suspicious redirects where applicable
+* HTTP/HTTPS security signals
+* Other URL-based indicators
+
+The system combines multiple signals rather than treating a single indicator as proof of malicious activity.
+
+---
+
+## 📧 2. Email Analysis
+
+Users can submit suspicious emails for analysis.
+
+CyberShield looks for common phishing indicators including:
+
+* Urgency
+* Threatening language
+* Requests for sensitive information
+* Suspicious links
+* Impersonation patterns
+* Payment requests
+* Credential requests
+* Social-engineering techniques
+
+The result explains **why the message may be suspicious**.
+
+---
+
+## 💬 3. Message & SMS Scam Detection
+
+CyberShield can analyze suspicious messages and identify common fraud patterns.
+
+Examples include:
+
+* Account suspension scams
+* OTP scams
+* KYC scams
+* Fake rewards
+* Payment requests
+* Delivery scams
+* Job scams
+* Bank impersonation
+
+---
+
+## 🤖 4. AI-Assisted Threat Explanation
+
+AI is used as an **explanation and assistance layer**, not as the only security decision-maker.
+
+The system can transform technical detection signals into simple explanations such as:
+
+> "This message creates urgency by threatening account suspension and asks for sensitive information. These are common indicators of phishing."
+
+This makes CyberShield useful for people who may not have cybersecurity knowledge.
+
+---
+
+## 🎯 5. Risk Scoring
+
+Every analysis produces a risk score from:
+
+```text
+0 ─────────────────────────────── 100
+LOW          MEDIUM       HIGH     CRITICAL
+```
+
+The score is based on detected indicators and their severity.
+
+### Example
+
+```text
+Risk Score: 87/100
+
+Risk Level: HIGH
+
+Detected:
+• Urgency
+• Credential request
+• Suspicious URL
+• Possible impersonation
+```
+
+The score is intended as a decision-support signal and **not a guarantee that content is malicious or safe**.
+
+---
+
+# 🇮🇳 Indian Digital Scam Awareness
+
+CyberShield is designed with common digital fraud patterns relevant to Indian users in mind.
+
+Examples include:
+
+### UPI Scams
+
+* Fake payment requests
+* UPI PIN requests
+* QR payment scams
+* Fake refunds
+
+### KYC Scams
+
+* Fake KYC expiration messages
+* Account-blocking threats
+* Fake verification links
+
+### Banking Scams
+
+* Fake bank security alerts
+* Account suspension threats
+* Credential harvesting
+
+### Other Common Scams
+
+* Fake job offers
+* Fake delivery messages
+* Lottery and prize scams
+* Investment scams
+* Customer-support impersonation
+
+---
+
+# 🛡️ Safe Action Recommendations
+
+CyberShield doesn't stop at detection.
+
+When a threat is identified, the platform provides practical recommendations.
+
+For example:
+
+### If a phishing message is detected:
+
+1. Do not click the suspicious link.
+2. Do not reply to the sender.
+3. Do not share passwords or OTPs.
+4. Verify the request through the organization's official website or application.
+5. Report the suspicious message.
+6. If financial information has been compromised, contact the relevant financial institution immediately.
+
+This turns CyberShield from a simple detector into a **digital safety assistant**.
+
+---
+
+# 🧠 Explainable Security
+
+One of the main design goals of CyberShield is **explainability**.
+
+Instead of simply saying:
+
+```text
+❌ PHISHING DETECTED
+```
+
+the platform attempts to answer:
+
+```text
+WHY?
+
+⚠️ Urgent language
+⚠️ Sensitive information requested
+⚠️ Suspicious link
+⚠️ Possible impersonation
+
+WHAT SHOULD I DO?
+
+🛡️ Do not click the link
+🛡️ Do not share credentials
+🛡️ Verify through an official channel
+```
+
+This helps users learn how scams work while protecting themselves.
+
+---
+
+# 🏗️ System Architecture
+
+```text
+                    ┌─────────────────────┐
+                    │       USER          │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   CyberShield UI    │
+                    │  Web Application    │
+                    └──────────┬──────────┘
+                               │
+             ┌─────────────────┼─────────────────┐
+             ▼                 ▼                 ▼
+        Email Input       Message Input      URL Input
+             │                 │                 │
+             └─────────────────┼─────────────────┘
+                               ▼
+                    ┌─────────────────────┐
+                    │ Detection Engine    │
+                    │                     │
+                    │ • Pattern Analysis  │
+                    │ • URL Analysis      │
+                    │ • Scam Signals      │
+                    │ • Risk Calculation  │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   AI Explanation    │
+                    │       Layer         │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │    Risk Engine      │
+                    │                     │
+                    │ Score + Category    │
+                    │ + Evidence          │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │  User Safety Guide  │
+                    └─────────────────────┘
+```
+
+---
+
+# 🔐 Security & Privacy
+
+CyberShield follows a security-first design approach.
+
+### Principles
+
+* API keys should never be exposed in frontend code.
+* Sensitive credentials should never be entered into the scanner.
+* The system should avoid unnecessary storage of sensitive information.
+* Suspicious URLs should not automatically be opened.
+* AI should not be treated as an unquestionable security authority.
+* External threat intelligence should be clearly separated from local analysis.
+* Detection results should be presented as assessments rather than absolute truth.
+
+### ⚠️ Important
+
+CyberShield is a security assistance tool.
+
+**Never enter real passwords, OTPs, PINs, card numbers, authentication tokens, or other highly sensitive information into the scanner.**
+
+---
+
+# 🧪 Example Detection
+
+### Suspicious Email
+
+```text
+Subject: URGENT - Your Bank Account Will Be Suspended
+
+Your account will be suspended within 24 hours.
+
+Click the link below to verify your account.
+
+You must provide your password and OTP.
+```
+
+### CyberShield
+
+```text
+🔴 HIGH RISK
+
+Risk Score: 90/100
+
+Threat Type:
+Credential Phishing
+
+Warning Signs:
+• Urgency
+• Account suspension threat
+• Password request
+• OTP request
+• Suspicious verification link
+
+Recommended Action:
+Do not click the link or provide any credentials.
+Verify the message through the bank's official application.
+```
+
+---
+
+# 🧪 Demo Mode
+
+CyberShield can be demonstrated using controlled examples such as:
+
+* Safe email
+* Bank phishing email
+* Fake KYC message
+* UPI scam
+* Fake prize message
+* Suspicious URL
+* Job scam
+* Delivery scam
+
+All demonstration data should be fictional and must not contain real credentials or financial information.
+
+---
+
+# 🛠️ Technology
+
+The project uses a modern web-based architecture with AI-assisted security analysis.
+
+### Frontend
+
+* React
+* TypeScript
+* HTML
+* CSS
+* Modern responsive UI
+
+### Security Analysis
+
+* Rule-based threat detection
+* URL analysis
+* Pattern recognition
+* Risk scoring
+* Explainable security signals
+
+### AI
+
+* AI-assisted threat explanation
+* Natural-language security summaries
+* Human-readable recommendations
+
+### Deployment
+
+* Netlify
+
+---
+
+# 📁 Project Structure
+
+A simplified structure:
+
+```text
+CyberShield/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── ...
+│   │
+│   ├── lib/
+│   │   ├── analyzeThreat.ts
+│   │   ├── history.ts
+│   │   └── ...
+│   │
+│   ├── pages/
+│   │   ├── ...
+│   │
+│   ├── App.tsx
+│   ├── index.css
+│   └── ...
+│
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+# 🚀 Getting Started
+
+## 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+## 2. Enter the project
+
+```bash
+cd CyberShield
+```
+
+## 3. Install dependencies
+
+```bash
+npm install
+```
+
+## 4. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will then be available through the local development URL shown by Vite.
+
+---
+
+# ⚙️ Environment Variables
+
+If AI or external services are configured, create a `.env` file using the project's `.env.example`.
 
 Example:
 
-This message contains multiple indicators commonly associated with phishing. It creates urgency, impersonates a trusted organization, requests sensitive information, and directs the user to a suspicious external link.
-
-This makes cybersecurity easier to understand for non-technical users.
-
-🛡️ Safe Actions
-
-After detecting a threat, CyberShield provides practical recommendations such as:
-
-Don't click suspicious links.
-Never share OTPs, passwords, or PINs.
-Verify the communication through official channels.
-Report suspicious messages.
-Block the sender when appropriate.
-📊 Threat Dashboard
-
-The dashboard provides an overview of:
-
-Total threats scanned
-Threats detected
-High-risk threats
-Protection score
-Recent threats
-Threat trends
-📚 Digital Safety Center
-
-Educational resources covering:
-
-Phishing
-Fake websites
-OTP safety
-Social engineering
-Online shopping scams
-Account security
-🎬 Live Demo Mode
-
-CyberShield includes predefined examples that demonstrate:
-
-Phishing → Scan → Risk Analysis → Explanation → Safe Actions
-
-This allows the complete detection workflow to be demonstrated in under one minute.
-
-🧠 Threat Detection Architecture
-                 USER
-                   │
-                   ▼
-          ┌─────────────────┐
-          │ Message / URL   │
-          └────────┬────────┘
-                   │
-                   ▼
-          ┌─────────────────┐
-          │  Preprocessing  │
-          └────────┬────────┘
-                   │
-                   ▼
-       ┌─────────────────────────┐
-       │ Threat Indicator Engine │
-       └────────────┬────────────┘
-                    │
-          ┌─────────┴─────────┐
-          ▼                   ▼
-   Social Engineering    URL Analysis
-          │                   │
-          └─────────┬─────────┘
-                    ▼
-           ┌─────────────────┐
-           │  Risk Scoring   │
-           └────────┬────────┘
-                    │
-                    ▼
-           ┌─────────────────┐
-           │ AI Explanation  │
-           └────────┬────────┘
-                    │
-                    ▼
-           ┌─────────────────┐
-           │  Safe Actions   │
-           └─────────────────┘
+```env
+VITE_AI_API_KEY=your_api_key_here
+```
 
-🏗️ Technology Stack
-Frontend
-React
-JavaScript / TypeScript
-Tailwind CSS
-Lucide Icons
-Analysis Engine
+### Never commit real API keys.
 
-The current hackathon MVP uses a local threat-analysis engine that evaluates suspicious patterns and assigns weighted risk scores.
+Add `.env` to `.gitignore`.
 
-The architecture is designed so that a real AI/LLM service and external threat-intelligence APIs can be integrated in future versions.
-
-Storage
-Browser LocalStorage for demo threat history
-Development
-Bolt.new
-GitHub
-🚀 Getting Started
-Prerequisites
+---
 
-Make sure you have:
+# 📊 Risk Classification
 
-Node.js
-npm
-Git
+CyberShield uses a risk-based model rather than a simple binary classification.
 
-installed on your computer.
+| Risk        | Meaning                                           |
+| ----------- | ------------------------------------------------- |
+| 🟢 LOW      | Few suspicious indicators detected                |
+| 🟡 MEDIUM   | Some potentially suspicious indicators            |
+| 🟠 HIGH     | Multiple strong warning signs                     |
+| 🔴 CRITICAL | Strong evidence of a potentially dangerous threat |
 
-Clone the repository
-git clone https://github.com/YOUR-USERNAME/cybershield.git
+These classifications are **risk assessments**, not guarantees.
 
-Enter the project
-cd cybershield
+---
 
-Install dependencies
-npm install
+# 🎯 Why CyberShield?
 
-Start the development server
-npm run dev
+Most users don't need another complicated cybersecurity dashboard.
 
+They need to know:
 
-The application will be available at the local development URL shown in your terminal.
+> **"Is this dangerous?"**
 
-🧪 Example Threats
-🔴 Phishing Example
-URGENT: Your bank account will be suspended today.
-Verify your account immediately to avoid losing access.
-Click here: http://secure-bank-verification.example.com/login
+and more importantly:
 
+> **"Why is it dangerous, and what should I do?"**
 
-Expected result:
+CyberShield focuses on those two questions.
 
-HIGH RISK / CRITICAL THREAT
+### Our approach
 
-🔴 Prize Scam Example
-Congratulations! You have won ₹50,00,000 in our lucky draw.
-Pay ₹2,999 processing fee immediately to claim your prize.
+```text
+Detect
+  ↓
+Explain
+  ↓
+Educate
+  ↓
+Protect
+```
 
+---
 
-Expected result:
+# 🏆 Hackathon Problem Statement
 
-HIGH RISK
+**PH-03 | CyberShield – Digital Fraud & Phishing Detection**
 
-🟢 Safe Example
-Your electricity bill of ₹1,240 is due on 20 August.
-Please make your payment through the official electricity provider application.
+### Theme
 
+* Cybersecurity
+* Artificial Intelligence
+* Digital Safety
 
-Expected result:
+### Challenge
 
-SAFE / LOW RISK
+Develop an intelligent solution that can identify potential digital fraud or phishing attempts and help users understand and respond to such threats safely.
 
-🔐 Security & Privacy
+### CyberShield's Approach
 
-CyberShield is designed as a security-awareness prototype.
+CyberShield addresses the challenge through:
 
-Important:
+* Explainable threat detection
+* AI-assisted analysis
+* Risk scoring
+* Scam classification
+* URL analysis
+* Digital safety recommendations
+* User education
 
-Never enter real passwords, OTPs, credit/debit card numbers, banking credentials, or other sensitive information into the hackathon demo.
+---
 
-The current MVP performs analysis locally and does not require users to provide sensitive credentials.
+# 🔮 Future Improvements
 
-🔮 Future Improvements
+Possible future development includes:
 
-The current version is a hackathon MVP. Future versions could include:
+* Browser extension with real-time website warnings
+* Advanced QR-code analysis
+* Screenshot/OCR analysis
+* Phone-number reputation checking
+* Real-time threat-intelligence integrations
+* Email header analysis
+* Domain-age and WHOIS intelligence
+* Multi-language scam detection
+* WhatsApp/SMS integrations
+* Mobile application
+* Enterprise security dashboard
+* SOC integration
+* Continuous threat intelligence updates
+* Improved machine-learning models trained on verified datasets
 
-🤖 Advanced AI
-LLM-powered semantic analysis
-Multilingual phishing detection
-Context-aware threat classification
-AI-generated explanations
-🌐 Real-Time Threat Intelligence
+---
 
-Integration with:
+# ⚠️ Limitations
 
-URL reputation services
-Domain reputation databases
-Malware intelligence feeds
-Phishing databases
-📱 Multi-Platform Protection
-Browser extension
-Android application
-iOS application
-Email security integration
-WhatsApp/SMS protection
-🧠 Personalized Security
-User-specific threat patterns
-Adaptive risk scoring
-Security awareness recommendations
-Personalized digital safety score
-🎯 Hackathon Objective
+CyberShield should not be treated as a replacement for:
 
-CyberShield focuses on making cybersecurity accessible, understandable, and actionable.
+* Antivirus software
+* Endpoint protection
+* Security operations teams
+* Bank fraud systems
+* Professional cybersecurity investigation
 
-Instead of simply telling users:
+A legitimate message may sometimes contain suspicious characteristics, and sophisticated attacks may evade detection.
 
-"This link is dangerous."
+CyberShield therefore presents its output as a **risk assessment and safety recommendation**, not absolute proof.
 
-CyberShield explains:
+---
 
-What is suspicious → Why it is suspicious → How risky it is → What the user should do next.
+# 👥 Team
 
-⚠️ Disclaimer
+### Team CyberShield
 
-CyberShield is an educational cybersecurity prototype created for hackathon demonstration purposes.
+**Project:** CyberShield – AI Digital Fraud & Phishing Detection
 
-It should not be considered a replacement for professional cybersecurity products, security researchers, financial institutions, law-enforcement agencies, or official threat-intelligence services.
+**Problem Statement:** PH-03
 
-Always verify suspicious communications through official channels.
+**Domain:** Cybersecurity + Artificial Intelligence + Digital Safety
 
-👥 Team
+---
 
-CyberShield Team
+# 📌 Project Status
 
-Built for:
+**Status:** Hackathon Prototype 🚀
 
-PH-03 | CyberShield – Digital Fraud & Phishing Detection
+CyberShield is being developed as a working prototype demonstrating how AI and explainable security analysis can help everyday users identify and respond safely to potential digital fraud.
 
-Theme:
+---
 
-Cybersecurity | Artificial Intelligence | Digital Safety
+# 🌐 Live Demo
 
-⭐ Acknowledgements
+**CyberShield:**
+https://cybersheild01.netlify.app/
 
-This project was developed as a rapid hackathon prototype using modern web development and AI-assisted development tools.
+---
 
-🛡️ CyberShield
+# 📄 License
 
-Stop. Verify. Protect.
+This project is created for educational and hackathon purposes.
+
+If this project is released publicly, add the appropriate open-source license here.
+
+---
+
+## 🛡️ CyberShield
+
+### Detect. Explain. Protect.
+
+> **Don't just tell users that something is dangerous. Teach them why.**

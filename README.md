@@ -1,10 +1,9 @@
 🛡️ CyberShield
 AI-Powered Digital Fraud & Phishing Detection
 
+Project URL: https://cybersheild01.netlify.app/
+
 CyberShield helps users identify phishing, fraud, malicious links, scams, and social-engineering attacks before they become victims.
-
-
-
 
 
 🚨 Problem
